@@ -1,0 +1,82 @@
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: sans-serif;
+//   background: #ecf0f1;
+// }
+
+// button {
+//   width: 86px;
+//   height: 40px;
+//   background-color: #f9cb11;
+//   border: none;
+//   border-radius: 6px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   cursor: pointer;
+//   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+//   outline: 0;
+//   transition: all 0.25s ease;
+
+//   &:hover {
+//     opacity: 0.8;
+//     transition: all 0.25s ease;
+//   }
+// }
+
+// .menu {
+//   background: #34495e;
+//   height: 100vh;
+//   width: 250px;
+//   opacity: 0;
+//   positon: absolute;
+//   visibility: hidden;
+//   transition: all 0.25s ease;
+//   transform: translateX(-50%);
+
+//   a {
+//     color: #fff;
+//     text-decoration: none;
+//     display: block;
+//     padding: 20px;
+//   }
+
+//   ul {
+//     padding: 0;
+//     margin: 0;
+
+//     li {
+//       font-size: 16px;
+//       border-bottom: 1px solid #fff;
+//       transition: all 0.25s ease;
+//       animation: fadeInRight 0.25s ease forwards;
+//       opacity: 0;
+
+//       &:hover {
+//         opacity: 0.8;
+//         transition: all 0.25s ease;
+//         background: #000;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+
+// .active {
+//   opacity: 1;
+//   visibility: visible;
+//   transition: all 0.25s ease;
+//   transform: translateX(0);
+// }
+
+// @-webkit-keyframes fadeInRight {
+//   0% {
+//     opacity: 0;
+//     left: 20%;
+//   }
+//   100% {
+//     opacity: 1;
+//     left: 0;
+//   }
+// }

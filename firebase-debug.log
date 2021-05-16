@@ -1,0 +1,80 @@
+[debug] [2021-04-24T08:48:25.297Z] ----------------------------------------------------------------------
+[debug] [2021-04-24T08:48:25.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Heney\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-24T08:48:25.300Z] CLI Version:   9.10.0
+[debug] [2021-04-24T08:48:25.300Z] Platform:      win32
+[debug] [2021-04-24T08:48:25.300Z] Node Version:  v12.13.1
+[debug] [2021-04-24T08:48:25.302Z] Time:          Sat Apr 24 2021 09:48:25 GMT+0100 (British Summer Time)
+[debug] [2021-04-24T08:48:25.302Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-24T08:48:25.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-24T08:48:25.313Z] > authorizing via signed-in user (henryjohnpeters@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Heney\Desktop\EVENTX\eventx
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using eventx-bfe7f. 
+[debug] [2021-04-24T08:48:41.337Z] > refreshing access token with scopes: []
+[debug] [2021-04-24T08:48:41.338Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-24T08:48:41.519Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 24 Apr 2021 08:48:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:48:41.567Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f [none]
+[debug] [2021-04-24T08:48:41.817Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f 200
+[debug] [2021-04-24T08:48:41.817Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f {"projectId":"eventx-bfe7f","projectNumber":"1090088131508","displayName":"EVENTX","name":"projects/eventx-bfe7f","resources":{"hostingSite":"eventx-bfe7f"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-24T08:48:41.822Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-24T08:48:41.822Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-24T08:48:41.950Z] <<< HTTP RESPONSE 200 {"date":"Sat, 24 Apr 2021 08:48:40 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:48:41.998Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/eventx-bfe7f/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-24T08:48:42.999Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 24 Apr 2021 08:48:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-04-24T08:48:43.005Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/eventx-bfe7f/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-04-24T08:48:44.594Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 24 Apr 2021 08:48:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:48:54.602Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/eventx-bfe7f/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-24T08:48:55.554Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 24 Apr 2021 08:48:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-24T08:48:55.567Z] > refreshing access token with scopes: []
+[debug] [2021-04-24T08:48:55.568Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-24T08:48:55.699Z] <<< HTTP RESPONSE 200 {"date":"Sat, 24 Apr 2021 08:48:53 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:48:55.748Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f [none]
+[debug] [2021-04-24T08:48:55.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f 200
+[debug] [2021-04-24T08:48:55.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eventx-bfe7f {"projectId":"eventx-bfe7f","projectNumber":"1090088131508","displayName":"EVENTX","name":"projects/eventx-bfe7f","resources":{"hostingSite":"eventx-bfe7f"},"state":"ACTIVE"}
+[debug] [2021-04-24T08:49:14.600Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-24T08:49:14.601Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-24T08:49:14.722Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 24 Apr 2021 08:49:12 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:49:14.769Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/eventx-bfe7f/locations/europe-west1/instances?databaseId=eventx-bfe7f-default-rtdb&validateOnly=true  
+ {"type":"default_database"}
+[debug] [2021-04-24T08:49:15.621Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 24 Apr 2021 08:49:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-24T08:49:15.628Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/eventx-bfe7f/locations/europe-west1/instances?databaseId=eventx-bfe7f-default-rtdb  
+ {"type":"default_database"}
+[debug] [2021-04-24T08:49:17.354Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 24 Apr 2021 08:49:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
